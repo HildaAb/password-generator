@@ -9,31 +9,33 @@
   <body>
     <div class="pw-container">
       <div class="pw-header">
-        <div class="pw">
-          <button>Copy to clipbord</button>
+        <div class="pw" id="pw">
+          12345
+          <button id="copy">Copy to clipbord</button>
         </div>
       </div>
       <div class="pw-body">
-        <div class="div form-controll">
+        <div class="div form-control">
           <label for="pw-len">Password Length</label>
-          <input id="pw-len" type="number" min="2" max="40" />
+          <input id="pw-len" value="20" type="number" min="2" max="40" />
         </div>
-        <div class="div form-controll">
+        <div class="div form-control">
           <label for="upper">Contain Uppercase Letters</label>
           <input id="upper" type="checkbox" />
         </div>
-        <div class="div form-controll">
+        <div class="div form-control">
           <label for="lower">Contain Lowercase Letters</label>
           <input id="lower" type="checkbox" />
         </div>
-        <div class="div form-controll">
+        <div class="div form-control">
           <label for="number">Contain Numbers</label>
           <input id="number" type="checkbox" />
         </div>
-        <div class="div form-controll">
+        <div class="div form-control">
           <label for="symbol">Contain Symbols</label>
           <input id="symbol" type="checkbox" />
         </div>
+        <button class="generate" ,id="generate">Generate password</button>
       </div>
     </div>
     <script src="app.js"></script>
