@@ -18,14 +18,15 @@ body {
 .pw-container {
   background-color: rgb(67, 41, 98);
   border: 2px solid goldenrod;
-  border-radius: 10px;
+
   box-shadow: 0 6px 10px rgba(0, 0, 0, 04);
   width: 500px;
-  height: 340px;
+  height: 375px;
 }
 
 .pw-header {
   padding: 1rem;
+  margin-top: 10px;
 }
 
 .pw {
@@ -61,7 +62,7 @@ body {
 .form-control {
   display: flex;
   justify-content: space-between;
-  margin: 0.5rem 0;
+  margin: 0.7rem;
 }
 
 .generate {
