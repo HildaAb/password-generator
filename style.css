@@ -41,7 +41,7 @@ body {
   overflow: auto;
 }
 
-.pw button {
+.copy {
   position: absolute;
   background-color: goldenrod;
   color: rgb(67, 41, 98);
@@ -49,11 +49,9 @@ body {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: bold;
   border: none;
-  border-radius: 15px;
-  padding: 0.5rem 0.8rem;
-  bottom: 0;
-  left: 75%;
-  transform: translate(50%, -50%);
+  left: 90%;
+  margin-top: -53px;
+  cursor: pointer;
 }
 
 .pw-body {

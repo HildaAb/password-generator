@@ -58,7 +58,19 @@ function generateX() {
     xs.push(getSymbol());
   }
 
+  if (xs.length === 0) return "";
+
   return xs[Math.floor(Math.random() * xs.length)];
 }
 
 generateEl.addEventListener("click", generatePassword);
+
+copyEl.addEventListener("click", async () => {
+  const textToCopy = pwEl.innerHTML;
+  try {
+    await navigator.clipboard.writeText(textToCopy);
+    alert("Password copied to clippboard!");
+  } catch (err) {
+    console.error("Eroor. Password coudn´t be copied", err);
+  }
+});
